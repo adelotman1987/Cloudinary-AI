@@ -17,9 +17,9 @@ import { formUrlQuery } from "@/lib/utils";
 
 import { Button } from "../ui/button";
 
-import  Search  from "./Search";
+import { Search } from "./Search";
 
-const Collection = ({
+export const Collection = ({
   hasSearch = false,
   images,
   totalPages = 1,
@@ -127,6 +127,3 @@ const Card = ({ image }: { image: IImage }) => {
     </li>
   );
 };
-
-
-export default Collection

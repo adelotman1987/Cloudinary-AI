@@ -20,7 +20,7 @@ type CustomFieldProps = {
   className?: string;
 };
 
- const CustomField = ({
+export const CustomField = ({
   control,
   render,
   name,
@@ -41,5 +41,3 @@ type CustomFieldProps = {
     />
   );
 };
-
-export default CustomField

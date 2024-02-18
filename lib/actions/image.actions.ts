@@ -177,6 +177,6 @@ export async function getUserImages({
       totalPages: Math.ceil(totalImages / limit),
     };
   } catch (error) {
-    handleError(error);
+    handleError(error)
   }
 }

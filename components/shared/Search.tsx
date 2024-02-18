@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { formUrlQuery, removeKeysFromQuery } from "@/lib/utils";
 
-const Search = () => {
+export const Search = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [query, setQuery] = useState("");
@@ -52,6 +52,3 @@ const Search = () => {
     </div>
   );
 };
-
-
-export default Search

@@ -17,7 +17,7 @@ import { deleteImage } from "@/lib/actions/image.actions";
 
 import { Button } from "../ui/button";
 
-const DeleteConfirmation = ({ imageId }: { imageId: string }) => {
+export const DeleteConfirmation = ({ imageId }: { imageId: string }) => {
   const [isPending, startTransition] = useTransition();
 
   return (
@@ -59,5 +59,3 @@ const DeleteConfirmation = ({ imageId }: { imageId: string }) => {
     </AlertDialog>
   );
 };
-
-export default DeleteConfirmation
